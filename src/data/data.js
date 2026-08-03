@@ -291,22 +291,7 @@ export const tools = [
     icon: 'ScanBarcode',
     popular: false,
   },
-  {
-    id: 'gradient-generator',
-    name: 'Gradient Generator',
-    description: 'Design CSS gradients visually and copy the code instantly.',
-    categoryId: 'generators',
-    icon: 'Paintbrush',
-    popular: false,
-  },
-  {
-    id: 'box-shadow-generator',
-    name: 'Box Shadow Generator',
-    description: 'Create and preview CSS box-shadow values interactively.',
-    categoryId: 'generators',
-    icon: 'Layers',
-    popular: false,
-  },
+
 
   // PDF Tools
   {
