@@ -51,6 +51,50 @@
     @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl;
   }
 
+  /* Neon-enhanced hero container */
+  .hero-neon-panel {
+    border-color: rgba(34, 211, 238, 0.18);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12),
+      0 0 0 1px rgba(52, 211, 153, 0.08),
+      0 0 40px rgba(34, 211, 238, 0.12),
+      0 0 90px rgba(52, 211, 153, 0.09);
+  }
+
+  .hero-neon-panel::after {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    border: 1px solid rgba(34, 211, 238, 0.16);
+    pointer-events: none;
+    box-shadow: 0 0 22px rgba(34, 211, 238, 0.2),
+      0 0 34px rgba(52, 211, 153, 0.12);
+    opacity: 0.75;
+  }
+
+  .neon-badge {
+    box-shadow: inset 0 0 0 1px rgba(34, 211, 238, 0.22),
+      0 0 16px rgba(34, 211, 238, 0.12);
+  }
+
+  .neon-btn-cyan {
+    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.16),
+      0 0 24px rgba(34, 211, 238, 0.22),
+      inset 0 0 18px rgba(34, 211, 238, 0.12);
+  }
+
+  .neon-btn-cyan:hover {
+    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.28),
+      0 0 28px rgba(34, 211, 238, 0.35),
+      0 0 52px rgba(52, 211, 153, 0.2),
+      inset 0 0 24px rgba(34, 211, 238, 0.2);
+  }
+
+  .neon-btn-muted:hover {
+    box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.2),
+      0 0 18px rgba(34, 211, 238, 0.12);
+  }
+
   /* Glowing text for the logo */
   .text-glow-cyan {
     text-shadow: 0 0 10px rgba(34, 211, 238, 0.6),
@@ -90,11 +134,53 @@
   .gradient-border:hover::before {
     opacity: 1;
   }
+
+  /* Force native select dropdown colors to match dark ocean theme */
+  .themed-select {
+    color-scheme: dark;
+  }
+
+  .themed-select option {
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
 }
 
 /* ── Utility Layer ──────────────────────────────────────────── */
 @layer utilities {
   .transition-glow {
     @apply transition-all duration-300 ease-in-out;
+  }
+
+  .animate-neon-cyan {
+    animation: neonPulseCyan 4.5s ease-in-out infinite;
+  }
+
+  .animate-neon-emerald {
+    animation: neonPulseEmerald 5.2s ease-in-out infinite;
+  }
+}
+
+@keyframes neonPulseCyan {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes neonPulseEmerald {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.04);
   }
 }

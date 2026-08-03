@@ -117,7 +117,7 @@ export default function PdfToImage() {
               <select
                 value={format}
                 onChange={(e) => setFormat(e.target.value)}
-                className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg
+                className="themed-select w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg
                            text-slate-200 text-sm focus:outline-none focus:border-neon-cyan/50 transition-glow"
               >
                 <option value="png">PNG (lossless)</option>
@@ -150,7 +150,7 @@ export default function PdfToImage() {
               <select
                 value={scale}
                 onChange={(e) => setScale(Number(e.target.value))}
-                className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg
+                className="themed-select w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg
                            text-slate-200 text-sm focus:outline-none focus:border-neon-cyan/50 transition-glow"
               >
                 <option value={1}>1x — Standard</option>

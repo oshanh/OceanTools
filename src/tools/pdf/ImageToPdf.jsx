@@ -164,7 +164,7 @@ export default function ImageToPdf() {
               <select
                 value={pageSize}
                 onChange={(e) => setPageSize(e.target.value)}
-                className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg
+                className="themed-select w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg
                            text-slate-200 text-sm focus:outline-none focus:border-neon-cyan/50 transition-glow"
               >
                 <option value="a4">A4</option>
@@ -177,7 +177,7 @@ export default function ImageToPdf() {
               <select
                 value={orientation}
                 onChange={(e) => setOrientation(e.target.value)}
-                className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg
+                className="themed-select w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg
                            text-slate-200 text-sm focus:outline-none focus:border-neon-cyan/50 transition-glow"
               >
                 <option value="portrait">Portrait</option>

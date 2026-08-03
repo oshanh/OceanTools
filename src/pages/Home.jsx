@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <div className="max-w-7xl mx-auto space-y-12">
       {/* ── Hero Section ─────────────────────────────────────── */}
-      <section className="relative overflow-hidden rounded-2xl glass-panel p-8 md:p-12 lg:p-16">
+      <section className="relative overflow-hidden rounded-2xl glass-panel hero-neon-panel p-8 md:p-12 lg:p-16">
         {/* Decorative background glow */}
         <div className="absolute inset-0 bg-hero-gradient pointer-events-none" />
-        <div className="absolute -top-24 -right-24 w-64 h-64 bg-neon-cyan/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-neon-emerald/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -top-24 -right-24 w-64 h-64 bg-neon-cyan/20 rounded-full blur-3xl pointer-events-none animate-neon-cyan" />
+        <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-neon-emerald/20 rounded-full blur-3xl pointer-events-none animate-neon-emerald" />
 
         <div className="relative z-10 max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-neon-cyan/10 border border-neon-cyan/20 text-neon-cyan text-sm">
+          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-neon-cyan/10 border border-neon-cyan/20 text-neon-cyan text-sm neon-badge">
             <Zap size={14} />
             <span>100% Free · No Sign-up Required</span>
           </div>
@@ -40,7 +40,7 @@ export default function Home() {
               href="#categories"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg
                          bg-neon-cyan/20 text-neon-cyan font-medium border border-neon-cyan/30
-                         hover:bg-neon-cyan/30 hover:shadow-glow-cyan transition-glow"
+                         hover:bg-neon-cyan/30 hover:shadow-glow-cyan transition-glow neon-btn-cyan"
             >
               Explore Tools
               <ArrowRight size={18} />
@@ -49,7 +49,7 @@ export default function Home() {
               to="/category/developer-tools"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg
                          bg-white/5 text-slate-300 font-medium border border-white/10
-                         hover:bg-white/10 hover:border-white/20 transition-glow"
+                         hover:bg-white/10 hover:border-white/20 transition-glow neon-btn-muted"
             >
               <Waves size={18} />
               Developer Tools
