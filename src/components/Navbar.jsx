@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Waves, Search, Menu } from 'lucide-react';
+import { Search, Menu } from 'lucide-react';
+import LogoMark from './LogoMark';
 
 /**
  * Top navigation bar with logo, search placeholder, and mobile menu toggle.
@@ -19,9 +20,9 @@ export default function Navbar({ onMenuToggle }) {
 
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <Waves
+          <LogoMark
             size={28}
-            className="text-neon-cyan group-hover:animate-pulse-glow transition-glow"
+            className="shrink-0 drop-shadow-[0_0_10px_rgba(34,211,238,0.45)] group-hover:drop-shadow-[0_0_14px_rgba(52,211,153,0.55)] transition-glow"
           />
           <span className="text-xl font-bold tracking-tight">
             <span className="text-neon-cyan text-glow-cyan">Ocean</span>

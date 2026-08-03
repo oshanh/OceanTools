@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import { Waves, Zap, ArrowRight } from 'lucide-react';
+import { Zap, ArrowRight } from 'lucide-react';
 import { categories, getPopularTools } from '../data/data';
 import CategoryCard from '../components/CategoryCard';
 import ToolCard from '../components/ToolCard';
+import LogoMark from '../components/LogoMark';
 
 /**
  * Home page — hero section + category grid + popular tools.
@@ -51,7 +52,7 @@ export default function Home() {
                          bg-white/5 text-slate-300 font-medium border border-white/10
                          hover:bg-white/10 hover:border-white/20 transition-glow neon-btn-muted"
             >
-              <Waves size={18} />
+              <LogoMark size={18} className="shrink-0" />
               Developer Tools
             </Link>
           </div>
