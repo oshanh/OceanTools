@@ -5,6 +5,9 @@ import { lazy } from 'react';
  * Lazy-loaded so PDF libraries only download when a tool page is visited.
  */
 export const toolRegistry = {
+  'json-formatter': lazy(() => import('./developer/JSONFormatter')),
+  'base64-encoder': lazy(() => import('./developer/Base64Encoder')),
+  'regex-tester': lazy(() => import('./developer/RegexTester')),
   'pdf-to-image': lazy(() => import('./pdf/PdfToImage')),
   'image-to-pdf': lazy(() => import('./pdf/ImageToPdf')),
   'favicon-generator': lazy(() => import('./image/FaviconGenerator')),

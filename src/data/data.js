@@ -10,7 +10,7 @@ export const categories = [
     name: 'Developer Tools',
     description: 'Essential utilities for coding, debugging, and data manipulation.',
     icon: 'Code2',
-    toolCount: 6,
+    toolCount: 8,
     accent: 'cyan',
   },
   {
