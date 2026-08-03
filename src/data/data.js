@@ -61,6 +61,14 @@ export const categories = [
     toolCount: 5,
     accent: 'cyan',
   },
+  {
+    id: 'interesting-tools',
+    name: 'Interesting Tools',
+    description: 'Curious experiments — see what the web knows about you and explore hidden browser capabilities.',
+    icon: 'FlaskConical',
+    toolCount: 1,
+    accent: 'emerald',
+  },
 ];
 
 export const tools = [
@@ -239,6 +247,14 @@ export const tools = [
     icon: 'Key',
     popular: false,
   },
+  {
+    id: 'message-encryptor',
+    name: 'Message Encryptor',
+    description: 'Encrypt and decrypt secret messages using AES-256 password protection.',
+    categoryId: 'security-tools',
+    icon: 'FileKey2',
+    popular: true,
+  },
 
   // Converters
   {
@@ -272,6 +288,14 @@ export const tools = [
     categoryId: 'converters',
     icon: 'Ruler',
     popular: false,
+  },
+  {
+    id: 'age-calculator',
+    name: 'Age Calculator',
+    description: 'Calculate exact age or duration between two dates down to the second, with a live ticking counter.',
+    categoryId: 'converters',
+    icon: 'CalendarClock',
+    popular: true,
   },
 
   // Generators
@@ -332,6 +356,24 @@ export const tools = [
     description: 'Reduce PDF file size while preserving readability.',
     categoryId: 'pdf-tools',
     icon: 'FileDown',
+    popular: false,
+  },
+
+  // Interesting Tools
+  {
+    id: 'browser-fingerprint',
+    name: 'Browser Fingerprint',
+    description: 'See everything a website can learn about you — IP, device, browser, network, hardware and more.',
+    categoryId: 'interesting-tools',
+    icon: 'Fingerprint',
+    popular: true,
+  },
+  {
+    id: 'random-quote-generator',
+    name: 'Random Quote Generator',
+    description: 'Discover random quotes from famous people, copy, and share them instantly.',
+    categoryId: 'interesting-tools',
+    icon: 'MessageSquareQuote',
     popular: false,
   },
 ];

@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "crypto-js": "^4.2.0",
+    "diff": "^9.0.0",
     "jsbarcode": "^3.12.3",
     "jspdf": "^4.2.1",
     "jszip": "^3.10.1",
     "lucide-react": "^1.28.0",
+    "marked": "^18.0.7",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^6.2.108",
     "qrcode": "^1.5.4",

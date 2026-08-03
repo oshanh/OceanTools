@@ -7,7 +7,7 @@ import LogoMark from './LogoMark';
  */
 export default function Navbar({ onMenuToggle }) {
   return (
-    <header className="sticky top-0 z-40 glass-panel border-b border-white/10 rounded-none">
+    <header className="shrink-0 relative w-full z-40 glass-panel border-b border-white/10 rounded-none bg-ocean-950/80 backdrop-blur-md">
       <div className="flex items-center justify-between px-4 py-3 lg:px-6">
         {/* Mobile menu button */}
         <button
