@@ -18,7 +18,7 @@ export const categories = [
     name: 'Image Tools',
     description: 'Resize, convert, compress, and optimize your images online.',
     icon: 'Image',
-    toolCount: 5,
+    toolCount: 6,
     accent: 'emerald',
   },
   {
@@ -154,6 +154,14 @@ export const tools = [
     categoryId: 'image-tools',
     icon: 'Square',
     popular: false,
+  },
+  {
+    id: 'background-remover',
+    name: 'Background Remover',
+    description: 'Remove image backgrounds automatically and export transparent PNGs.',
+    categoryId: 'image-tools',
+    icon: 'Eraser',
+    popular: true,
   },
 
   // Text Formatting

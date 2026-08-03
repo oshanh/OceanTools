@@ -8,4 +8,5 @@ export const toolRegistry = {
   'pdf-to-image': lazy(() => import('./pdf/PdfToImage')),
   'image-to-pdf': lazy(() => import('./pdf/ImageToPdf')),
   'favicon-generator': lazy(() => import('./image/FaviconGenerator')),
+  'background-remover': lazy(() => import('./image/BackgroundRemover')),
 };
