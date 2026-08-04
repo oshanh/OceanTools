@@ -22,6 +22,7 @@ import {
   Lock,
   Key,
   FileKey2,
+  Scan,
 } from 'lucide-react';
 
 /** Map icon name strings from data.js to lucide-react components */
@@ -49,4 +50,5 @@ export const iconMap = {
   Lock,
   Key,
   FileKey2,
+  Scan,
 };

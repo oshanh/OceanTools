@@ -358,6 +358,14 @@ export const tools = [
     icon: 'FileDown',
     popular: false,
   },
+  {
+    id: 'document-scanner',
+    name: 'Document Scanner',
+    description: 'Scan images into enhanced, high-contrast PDF documents.',
+    categoryId: 'pdf-tools',
+    icon: 'Scan',
+    popular: true,
+  },
 
   // Interesting Tools
   {

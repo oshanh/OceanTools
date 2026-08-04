@@ -13,6 +13,7 @@ export const toolRegistry = {
   'pdf-compressor': lazy(() => import('./pdf/PdfCompressor')),
   'pdf-to-image': lazy(() => import('./pdf/PdfToImage')),
   'image-to-pdf': lazy(() => import('./pdf/ImageToPdf')),
+  'document-scanner': lazy(() => import('./pdf/DocumentScanner')),
   'favicon-generator': lazy(() => import('./image/FaviconGenerator')),
   'background-remover': lazy(() => import('./image/BackgroundRemover')),
   'qr-code-generator': lazy(() => import('./generators/QrCodeGenerator')),
