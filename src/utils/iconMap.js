@@ -23,6 +23,11 @@ import {
   Key,
   FileKey2,
   Scan,
+  Pipette,
+  Clock,
+  Calculator,
+  Droplets,
+  Presentation,
 } from 'lucide-react';
 
 /** Map icon name strings from data.js to lucide-react components */
@@ -51,4 +56,9 @@ export const iconMap = {
   Key,
   FileKey2,
   Scan,
+  Pipette,
+  Clock,
+  Calculator,
+  Droplets,
+  Presentation,
 };

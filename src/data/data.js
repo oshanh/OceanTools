@@ -366,6 +366,14 @@ export const tools = [
     icon: 'Scan',
     popular: true,
   },
+  {
+    id: 'pdf-to-powerpoint',
+    name: 'PDF to PowerPoint',
+    description: 'Convert PDF pages into downloadable PowerPoint slides.',
+    categoryId: 'pdf-tools',
+    icon: 'Presentation',
+    popular: true,
+  },
 
   // Interesting Tools
   {
