@@ -25,7 +25,9 @@ function fromInputValue(str) {
  */
 function calcDiff(fromDate, toDate) {
     if (toDate < fromDate) {
-        const tmp = fromDate; fromDate = toDate; toDate = tmp;
+        const tmp = fromDate; 
+        fromDate = toDate; 
+        toDate = tmp;
     }
 
     let years = toDate.getFullYear() - fromDate.getFullYear();
@@ -85,7 +87,7 @@ function UnitBox({ value, label, accent = false }) {
 // ---------------------------------------------------------------------------
 export default function AgeCalculator() {
     // "From" date — user's birth date or any past date
-    const [fromStr, setFromStr] = useState('2000-01-01T00:00:00');
+    const [fromStr, setFromStr] = useState(localStorage.getItem('fromDate') ?localStorage.getItem('fromDate'): '2000-01-01T00:00:00');
 
     // "To" date — pre-filled with right now, but user can change it
     const nowRef = useRef(new Date());
@@ -129,6 +131,7 @@ export default function AgeCalculator() {
 
     // -------------------------------------------------------------------------
     const handleReset = () => {
+        localStorage.setItem('fromDate','')
         setFromStr('2000-01-01T00:00:00');
         setToStr(toLocalInputValue(new Date()));
         setLiveTo(true);
@@ -147,6 +150,13 @@ export default function AgeCalculator() {
         const diffDays = Math.ceil((next - now) / 86400000);
         return { date: next, daysAway: diffDays };
     })();
+
+    //store birthday in local storage
+    const storefd=(fromDate)=>{
+        setFromStr(fromDate);
+        localStorage.setItem('fromDate',fromDate);
+
+    }
 
     // -------------------------------------------------------------------------
     return (
@@ -191,7 +201,7 @@ export default function AgeCalculator() {
                             type="datetime-local"
                             value={fromStr}
                             step="1"
-                            onChange={(e) => setFromStr(e.target.value)}
+                            onChange={(e) => storefd(e.target.value)}
                             className="w-full px-3 py-2.5 bg-white/5 border border-white/10 rounded-lg
                          text-slate-200 text-sm focus:outline-none focus:border-neon-cyan/50
                          transition-glow [color-scheme:dark]"

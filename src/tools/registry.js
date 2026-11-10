@@ -15,6 +15,7 @@ export const toolRegistry = {
   'image-to-pdf': lazy(() => import('./pdf/ImageToPdf')),
   'document-scanner': lazy(() => import('./pdf/DocumentScanner')),
   'pdf-to-powerpoint': lazy(() => import('./pdf/PdfToPowerpoint')),
+  'pdf-to-word': lazy(() => import('./pdf/PdfToWord')),
   'favicon-generator': lazy(() => import('./image/FaviconGenerator')),
   'background-remover': lazy(() => import('./image/BackgroundRemover')),
   'color-picker': lazy(() => import('./image/ColorPicker')),

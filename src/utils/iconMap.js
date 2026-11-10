@@ -28,6 +28,7 @@ import {
   Calculator,
   Droplets,
   Presentation,
+  FileType,
 } from 'lucide-react';
 
 /** Map icon name strings from data.js to lucide-react components */
@@ -61,4 +62,5 @@ export const iconMap = {
   Calculator,
   Droplets,
   Presentation,
+  FileType,
 };

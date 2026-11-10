@@ -58,7 +58,7 @@ export const categories = [
     name: 'PDF Tools',
     description: 'Merge, split, convert, and compress PDF documents in your browser.',
     icon: 'FileText',
-    toolCount: 5,
+    toolCount: 8,
     accent: 'cyan',
   },
   {
@@ -372,6 +372,14 @@ export const tools = [
     description: 'Convert PDF pages into downloadable PowerPoint slides.',
     categoryId: 'pdf-tools',
     icon: 'Presentation',
+    popular: true,
+  },
+  {
+    id: 'pdf-to-word',
+    name: 'PDF to Word',
+    description: 'Convert PDF pages into an editable Word (.docx) document with extracted text.',
+    categoryId: 'pdf-tools',
+    icon: 'FileType',
     popular: true,
   },
 
