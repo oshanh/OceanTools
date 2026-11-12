@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
-import { X, ChevronDown, ChevronRight, Hash } from 'lucide-react';
+import { X, ChevronDown, FileText } from 'lucide-react';
+import * as LucideIcons from 'lucide-react';
 import { categories, tools } from '../data/data';
 import { iconMap } from '../utils/iconMap';
 
@@ -57,7 +58,7 @@ export default function Sidebar({ isOpen, onClose }) {
         {/* Category links */}
         <nav className="p-3 space-y-1">
           {categories.map((category) => {
-            const Icon = iconMap[category.icon];
+            const Icon = LucideIcons[category.icon] || iconMap[category.icon];
             const isCyan = category.accent === 'cyan';
             const isExpanded = expanded[category.id];
 
@@ -121,7 +122,7 @@ export default function Sidebar({ isOpen, onClose }) {
                 >
                   <div className="overflow-hidden space-y-0.5 ml-2 border-l border-white/10 pl-2">
                     {categoryTools.map(tool => {
-                      const ToolIcon = iconMap[tool.icon] || Hash;
+                      const ToolIcon = LucideIcons[tool.icon] || iconMap[tool.icon] || FileText;
                       return (
                         <NavLink
                           key={tool.id}

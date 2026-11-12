@@ -178,7 +178,7 @@ export const tools = [
     name: 'Word Counter',
     description: 'Count words, characters, sentences, and paragraphs in your text.',
     categoryId: 'text-formatting',
-    icon: 'Hash',
+    icon: 'WholeWord',
     popular: true,
   },
   {

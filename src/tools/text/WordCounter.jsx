@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Hash, Trash2, Copy, Check } from 'lucide-react';
+import { WholeWord, Trash2, Copy, Check } from 'lucide-react';
 
 export default function WordCounter() {
     const [text, setText] = useState('');
@@ -74,7 +74,7 @@ export default function WordCounter() {
             <div className="glass-panel p-5 border border-white/10 relative">
                 <div className="flex items-center justify-between mb-4">
                     <h2 className="text-sm font-semibold text-slate-300 uppercase tracking-wider flex items-center gap-2">
-                        <Hash size={16} className="text-neon-cyan" />
+                        <WholeWord size={16} className="text-neon-cyan" />
                         Text Input
                     </h2>
                     <div className="flex gap-2">
